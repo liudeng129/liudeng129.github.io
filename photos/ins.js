@@ -121,14 +121,14 @@
           var type = data.type[i];
           var target = src + (type === 'video' ? '.mp4' : '.jpg');
           src += '';
-          var width = data.width;
-          var height = data.height;
+          var width = data.width[i];
+          var height = data.height[i];
 
           liTmpl += '<figure class="thumb" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">\
                 <a href="' + src + '" itemprop="contentUrl" data-size="' + width + 'x' + height + '" data-type="' + type + '" data-target="' + src + '">\
                   <img class="reward-img" data-type="' + type + '" data-src="' + minSrc + '" src="' + minSrc + '" itemprop="thumbnail" onload="lzld(this)">\
                 </a>\
-                <figcaption style="display:none" itemprop="caption description">' + data.text[i] + '</figcaption>\
+                <figcaption style="display:none" itemprop="caption description">' + data.year + '年' + data.month + '月' + data.day[i] + '日，' + data.text[i] + '</figcaption>\
             </figure>';
         }
         ulTmpl = ulTmpl + '<section class="archives album"><h1 class="year">' + data.year + '年<em>' + data.month + '月</em></h1>\

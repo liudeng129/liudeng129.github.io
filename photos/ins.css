@@ -26,7 +26,7 @@
 }
 .instagram .thumb {
 	width: 25%;
-	height: 0; 
+	height: 0;
 	padding-bottom: 25%;
 	position: relative;
 	display: inline-block;
@@ -110,7 +110,7 @@
 .instagram .album div.img-box .img-bg:hover{
 	opacity: 0;
 }
-.photos-btn-wrap {
+/*.photos-btn-wrap {
 	border-bottom: 1px solid #e5e5e5;
 	margin-bottom: 20px;
 }
@@ -124,7 +124,7 @@
 	color: #08c;
 	border: 1px solid #e5e5e5;
 	border-bottom: 5px solid #fff;
-}
+}*/
 
 @media screen and (max-width:600px) {
 	.instagram .thumb {
